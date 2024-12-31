@@ -1,0 +1,988 @@
+/* Top Banner */
+.top-banner-container {
+    background: linear-gradient(90.85deg, #0f0e14 0.63%, #130e2c 99.22%);
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    color: white;
+    margin-bottom: 40px;
+}
+button {
+    border: none;
+}
+
+.top-banner-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+.top-banner-heading,
+.top-banner-price {
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 700;
+}
+.top-banner-heading:first-child {
+    color: rgba(255, 185, 0, 1);
+}
+.top-banner-price > span:nth-child(2) {
+    color: Green;
+    margin-left: 10px;
+}
+.top-banner-price > span:first-child {
+    text-decoration: line-through;
+}
+.top-banner-button {
+    padding: 18px 7px;
+    border-radius: 8px;
+    background: rgba(255, 185, 0, 1);
+    box-shadow: 0px 11px 36px 0px rgba(255, 185, 0, 0.24);
+    animation-timing-function: ease-out;
+    animation-duration: 300ms;
+    width: 297px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    text-align: center;
+    color: rgba(14, 58, 94, 1);
+}
+
+.top-banner-image-container {
+    width: 80%;
+    position: relative;
+}
+.top-banner-image-container > img {
+    width: 90%;
+    height: 100%;
+}
+.top-banner-weight-loss > img {
+    z-index: 11;
+    position: relative;
+    bottom: 50px;
+    width: 150px;
+    height: 168.06px;
+    transform: rotate(339deg);
+}
+.top-banner-weight-loss {
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    left: 200px;
+    width: 300px;
+    height: 85.88px;
+    border-radius: 16px;
+    background: white;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 27.5px;
+    text-align: left;
+    color: rgba(14, 58, 94, 1);
+}
+.top-banner-weight-loss > div {
+    margin: auto;
+    width: 100%;
+}
+.top-banner-weight-loss > div > b,
+.top-banner-weight-loss > div > span {
+    color: rgba(14, 58, 94, 1);
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 27.5px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.top-banner-weight-loss > div > span {
+    font-weight: 500;
+}
+.top-banner-weight-loss > div > b > span {
+    color: rgba(53, 195, 89, 1);
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 27.5px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+/* BMI calculator */
+.bmi-calculator-container {
+    margin: auto;
+    width: 70%;
+    height: 40%;
+    box-sizing: border-box;
+}
+.bmi-calculator-container > .header > div {
+    color: #0e3a5e;
+    font-weight: 700;
+    font-family: "Poppins", serif;
+    padding: 20px 52px;
+    cursor: pointer;
+    border-radius: 24px 24px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+.bmi-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bmi-result > span:nth-child(2) {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.bmi-result > button {
+    background: rgba(14, 58, 94, 1);
+    padding: 14px 84px;
+    border-radius: 8px;
+    font-family: Poppins;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 1);
+}
+.bmi-result > span:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.bmi-result > span:first-child > span {
+    color: rgba(255, 185, 0, 1);
+}
+.bmi-calculator-container > .header {
+    position: relative;
+}
+.bmi-calculator-container > .header > div:first-child {
+    border-radius: 24px 24px 0px 0px;
+    opacity: 1;
+    border: 4px solid #f4f2ef;
+    border-bottom: 0px;
+    background: #ffffff;
+}
+.bmi-calculator-container > .header > div:last-child {
+    background: #fffaeb;
+    width: 319px;
+    height: 67px;
+    gap: 0px;
+    border-radius: 0px 24px 0px 0px;
+    opacity: 0px;
+    position: absolute;
+    left: 200px;
+    z-index: -1;
+}
+.bmi-calculator-container > .header {
+    display: flex;
+}
+.bmi-calculator-container > div:last-child {
+    border: 4px solid #f4f2ef;
+    height: 372px;
+    border-radius: 0px 24px 24px 24px;
+    border: 4px 0px 0px 0px;
+    opacity: 0px;
+}
+.bmi-calculator-container > .bmi-calculator {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.bmi-calculator-container > .bmi-calculator > div > div {
+    display: flex;
+    justify-content: space-between;
+}
+.bmi-calculator-container > .bmi-calculator > div > div > span:first-child {
+    color: #0e3a5e;
+    font-size: 1.1rem;
+}
+.bmi-calculator-container > .bmi-calculator > div > div > span:last-child > span:first-child {
+    color: #0e3a5e;
+    font-weight: 700;
+    font-size: 1.32rem;
+    font-family: "Poppins", serif;
+    text-decoration: underline;
+    text-decoration-color: #cac4b7;
+    margin-right: 10px;
+}
+.bmi-calculator-container > .bmi-calculator > div > div > span:last-child > span:last-child {
+    color: #797764;
+}
+.bmi-calculator-container > .bmi-calculator > div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0px 6%;
+}
+.bmi-calculator-container > .bmi-calculator > div > .range {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    color: #cac4b7;
+    margin-bottom: 15px;
+}
+.range-drag-text {
+    color: #cac4b7;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.bmi-chart > div {
+    color: #797764;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.bmi-chart > div > span:first-child {
+    font-weight: 600;
+}
+
+/* facilities css */
+.facilities-container {
+    display: flex;
+    margin: 20px auto;
+    width: 70%;
+    justify-content: space-around;
+}
+
+.facilities-container > .facilities-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    width: 15%;
+}
+.facilities-container > .facilities-content > img {
+    width: 30%;
+}
+.facilities-container > .facilities-content > p {
+    font-weight: 500;
+    color: #0e3a5e;
+    font-family: Poppins;
+    font-size: 0.8rem;
+    width: 80%;
+}
+
+/* WeightLossProgram */
+.weight-loss-container {
+    margin: 4% auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.weight-loss-heading {
+    margin: auto;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    color: #0e3a5e;
+    width: 40%;
+    font-size: 1.98rem;
+}
+.weight-loss-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+.weight-loss-header {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    font-weight: 700;
+}
+.weight-loss-header > p {
+    text-align: center;
+    width: 25%;
+}
+.weight-loss-header-text-pharmacy {
+    color: #0e3a5e;
+}
+.weight-loss-header-text-valeo {
+    background: linear-gradient(180deg, #ffb900 0%, #c49928 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.weight-loss-row {
+    margin-top: 10px;
+    display: flex;
+    padding: 10px 0px;
+    justify-content: space-around;
+    align-items: center;
+    z-index: -1;
+    min-height: 100px;
+}
+.weight-loss-row-text {
+    color: rgba(14, 58, 94, 1);
+    font-weight: 500;
+    width: 30%;
+    z-index: 1;
+}
+.weight-loss-row:nth-child(odd) {
+    background: #f4f2ef;
+    border-radius: 24px;
+}
+.weight-loss-row-check {
+    color: white !important;
+}
+.weight-loss-row > img {
+    z-index: 111;
+}
+.weight-loss-button {
+    background: rgba(255, 185, 0, 1);
+    box-shadow: 0px 11px 36px 0px rgba(255, 185, 0, 0.24);
+    color: rgba(14, 58, 94, 1);
+    border-radius: 8px;
+    padding: 20px 80px;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 70px auto;
+}
+.weight-loss-column-text {
+    position: relative;
+    margin-top: 30px;
+}
+.box {
+    width: 480px;
+    height: 80px;
+    background: #ffffff;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    z-index: 0;
+    transform: rotate(90deg);
+    box-shadow: 0px 5px 5px 0px rgba(224, 228, 238, 0.5);
+    border-radius: 16px;
+}
+.weight-loss-column {
+    width: 100%;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1024px) {
+    .bmi-calculator-container {
+        width: 90%;
+    }
+
+    
+
+    .weight-loss-flex > .weight-loss-column:last-child > .weight-loss-header {
+        display: none;
+    }
+    .box {
+        left: -4%;
+        top: 90%;
+        width: 960px;
+    }
+    .weight-loss-flex > .weight-loss-column:last-child > .weight-loss-column-text > .box {
+        display: none;
+        z-index: 0;
+    }
+ 
+ 
+
+    .weight-loss-container {
+        width: 90%;
+    }
+
+    .weight-loss-heading {
+        font-size: 1.6rem;
+        width: 80%;
+    }
+
+    .weight-loss-flex {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .weight-loss-button {
+        padding: 15px 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bmi-calculator-container {
+        width: 100%;
+        height: auto;
+    }
+
+   
+
+    .weight-loss-heading {
+        font-size: 1.4rem;
+        width: 90%;
+    }
+
+    .weight-loss-flex {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .weight-loss-button {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .box {
+        width: 350px;
+        height: 60px;
+        top: 250px;
+        left: 50%;
+        transform: rotate(90deg) translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bmi-calculator-container {
+        width: 100%;
+        padding: 10px;
+    }
+ 
+    .weight-loss-heading {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    .weight-loss-flex {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .weight-loss-button {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .box {
+        width: 300px;
+        height: 50px;
+        top: 230px;
+        left: 50%;
+        transform: rotate(90deg) translateX(-50%);
+    }
+}
+
+/* global result css */
+
+.global-result-container {
+    margin: auto;
+    width: 60%;
+}
+.global-result-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: 10px;
+}
+.result-card {
+    width: 40%;
+    padding: 20px;
+    background: rgba(255, 250, 235, 1);
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+.result-card-content {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.result-card-icon {
+    border: 3px solid rgba(14, 58, 94, 1);
+    border-radius: 8px;
+}
+.result-value {
+    color: rgba(255, 185, 0, 1);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.result-description {
+    color: rgba(121, 119, 100, 1);
+    font-size: 1.2rem;
+}
+
+/* weight loss brand */
+.weight-loss-brand-container {
+    margin: 30px auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.brands-flex {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+.brand-image {
+    width: 229px;
+    height: 229px;
+}
+.brand-name {
+    color: rgba(14, 58, 94, 1);
+    font-weight: 600;
+    line-height: 10px;
+    margin: 20px 0px;
+}
+
+.brand-description {
+    color: rgba(121, 119, 100, 1);
+    line-height: 24px;
+}
+
+/* Healthcare Adviseors */
+
+#healthCare-advisors-container {
+    margin: 40px auto;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#healthCare-advisors-container > h2 {
+    color: rgba(14, 58, 94, 1);
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+#healthCare-advisors-container > h3 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    text-underline-position: from-font;
+    color: rgba(121, 119, 100, 1);
+    text-decoration-skip-ink: none;
+}
+#healthCare-advisiors {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+.healthCare-advisor > img {
+    width: 245px;
+    height: 245px;
+    border-radius: 24px;
+}
+.healthCare-advisor > h3 {
+    margin: 5px 0px;
+    color: rgba(14, 58, 94, 1);
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.healthCare-advisor > p {
+    margin: 5px 0px;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(14, 58, 94, 1);
+}
+.rating {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.rating > span:nth-child(2) {
+    font-weight: 700;
+    color: rgba(14, 58, 94, 1);
+}
+.rating > span:nth-child(3) {
+    color: rgba(121, 119, 100, 1);
+}
+.consultations {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border: 2px solid rgba(244, 242, 239, 1);
+    border-radius: 8px;
+}
+.consultations > span {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.consultations > span:first-child {
+    border: 0px;
+    border-right: 2px solid rgba(244, 242, 239, 1);
+}
+.consultations > span > span:first-child {
+    color: rgba(121, 119, 100, 1);
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 10px 20px;
+}
+.consultations > span > span:last-child {
+    color: rgba(182, 136, 255, 1);
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.consultations > span > span {
+    display: flex;
+    justify-content: center;
+}
+
+/* valeo-program-testimonial */
+
+.valeo-program-testimonial {
+    margin: auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.valeo-program-testimonial > h1 {
+    text-align: center;
+    color: rgba(14, 58, 94, 1);
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+video {
+    border-radius: 16px;
+    margin: 20px auto;
+}
+#easyToSteps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.easy-to-step {
+    padding: 8px; /* Reduced padding for a more compact appearance */
+    width: 47%; /* Shrink the width */
+    min-height: 140px; /* Reduced min-height */
+    display: flex;
+    background: rgba(255, 250, 235, 1);
+    border-radius: 16px;
+    align-items: center;
+}
+
+.easy-to-step > div:first-child > span {
+    background: rgba(255, 185, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 100%;
+    height: 50px;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 50px;
+}
+.stepsDetails > h2 {
+    color: rgba(14, 58, 94, 1);
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.stepsDetails > p {
+    color: rgba(121, 119, 100, 1);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+#easyToStepUI {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+#easyToStepUI > span {
+    display: flex;
+    flex-direction: column;
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 50%;
+    justify-content: center;
+}
+
+#easyToStepUI > span > span:first-child {
+    color: rgba(255, 185, 0, 1);
+}
+
+#easyToStepUI > span > span:last-child {
+    color: rgba(14, 58, 94, 1);
+}
+
+/* SuccessStories */
+
+#successStories {
+    margin: 20px auto;
+    width: 70%;
+}
+#successStories > h2 {
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(14, 58, 94, 1);
+    text-align: center;
+    margin: 40px 0px;
+}
+
+#imgContainer {
+    display: flex;
+    gap: 5px;
+}
+#imgContainer > img:first-child {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+#imgContainer > img:last-child {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#imgPreview {
+    display: flex;
+    position: relative;
+}
+#imgPreviewContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#details {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 20px;
+}
+#details > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#details > span:first-child {
+    width: 29%;
+    height: 44px;
+    background: white;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: rgba(14, 58, 94, 1);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+#details > span:last-child {
+    width: 29%;
+    height: 44px;
+    background: white;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    color: rgba(14, 58, 94, 1);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+#details > span:nth-child(2) {
+    border-radius: 8px;
+    background: rgba(14, 58, 94, 1);
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    color: white;
+}
+#details > span:nth-child(2) > span:first-child {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 275;
+    line-height: 12.6px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: white;
+}
+#rating {
+    display: flex;
+    margin: 20px 0px auto;
+    width: 50%;
+}
+#reviewContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#review {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+#desc {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(14, 58, 94, 1);
+    line-height: 20px;
+    width: 80%;
+}
+#nameLocation {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    gap: 10px;
+    display: flex;
+}
+#nameLocation > span:last-child {
+    color: rgba(121, 119, 100, 1);
+}
+
+#nameLocation > span:first-child {
+    color: rgba(14, 58, 94, 1);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+/* faq section */
+
+#faq {
+    margin: 50px auto;
+    width: 70%;
+}
+#faq > h1 {
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(50, 68, 91, 1);
+}
+
+#faqQuestion > details > summary {
+    display: flex;
+    justify-content: space-between;
+}
+
+#faqQuestion > details > ul > li {
+    list-style-type: numbers;
+    margin-left: 20px;
+}
+#faqQuestion > details > summary > span {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(50, 68, 91, 1);
+}
+#faqQuestion > details > p {
+    font-family: Poppins;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(50, 68, 91, 1);
+}
