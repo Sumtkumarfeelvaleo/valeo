@@ -33,7 +33,7 @@ function ValeoProgramTestimonial() {
   return (
     <div className="valeo-program-testimonial">
       <h1>Valeo’s Program Testimonial</h1>
-      <video width="689px" height="349px" controls>
+      <video controls>
         <source src={video} type="video/mp4" />
         <source src={previewImg} type="video/ogg" />
       </video>

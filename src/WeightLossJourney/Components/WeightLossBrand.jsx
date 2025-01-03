@@ -32,7 +32,7 @@ export const WeightLossBrand = () => {
 
   return (
     <div className="weight-loss-brand-container">
-      <p className="weight-loss-heading">Revolutionary Weight Loss Brands</p>
+      <p className="weight-loss-brand-heading">Revolutionary Weight Loss Brands</p>
       <div className="brands-flex">
         {brandsInfo.map((brandData, index) => (
           <div key={index} className="brand-card">

@@ -7,6 +7,7 @@
     justify-items: center;
     color: white;
     margin-bottom: 40px;
+    padding-top: 30px;
 }
 button {
     border: none;
@@ -21,7 +22,7 @@ button {
 .top-banner-heading,
 .top-banner-price {
     font-family: Poppins;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 .top-banner-heading:first-child {
@@ -64,17 +65,15 @@ button {
 .top-banner-weight-loss > img {
     z-index: 11;
     position: relative;
-    bottom: 50px;
-    width: 150px;
-    height: 168.06px;
+    bottom: 43px;
+    height: 200%;
     transform: rotate(339deg);
 }
 .top-banner-weight-loss {
     display: flex;
     position: absolute;
     bottom: 30px;
-    left: 200px;
-    width: 300px;
+    left: 34%;
     height: 85.88px;
     border-radius: 16px;
     background: white;
@@ -86,13 +85,16 @@ button {
 }
 .top-banner-weight-loss > div {
     margin: auto;
+    margin-right: 15px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .top-banner-weight-loss > div > b,
 .top-banner-weight-loss > div > span {
     color: rgba(14, 58, 94, 1);
     font-family: Poppins;
-    font-size: 22px;
+    font-size: 1.3rem;
     font-weight: 600;
     line-height: 27.5px;
     text-align: left;
@@ -105,12 +107,116 @@ button {
 .top-banner-weight-loss > div > b > span {
     color: rgba(53, 195, 89, 1);
     font-family: Poppins;
-    font-size: 22px;
     font-weight: 600;
-    line-height: 27.5px;
+    line-height: 20px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+}
+@media screen and (max-width: 1200px) {
+    .top-banner-heading,
+    .top-banner-price {
+        font-size: 2rem;
+    }
+    .top-banner-weight-loss > div > b,
+    .top-banner-weight-loss > div > span {
+        font-size: 1rem;
+        line-height: 10px;
+    }
+    .top-banner-weight-loss {
+        height: 59.88px;
+    }
+    .top-banner-weight-loss > img {
+        bottom: 30px;
+    }
+}
+@media screen and (max-width: 940px) {
+    .top-banner-heading,
+    .top-banner-price {
+        font-size: 1.5rem;
+    }
+    .top-banner-weight-loss > div > b,
+    .top-banner-weight-loss > div > span {
+        font-size: 0.8rem;
+    }
+    .top-banner-weight-loss {
+        height: 50.88px;
+        line-height: 0px;
+    }
+    .top-banner-weight-loss > img {
+        bottom: 30px;
+    }
+    .top-banner-button {
+        padding: 5px 7px;
+        width: 191px;
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 705px) {
+    .top-banner-heading,
+    .top-banner-price {
+        font-size: 1.2rem;
+    }
+    .top-banner-weight-loss > div > b,
+    .top-banner-weight-loss > div > span {
+        font-size: 0.6rem;
+    }
+    .top-banner-weight-loss {
+        border-radius: 8px;
+        height: 50.88px;
+        line-height: 0px;
+    }
+    .top-banner-weight-loss > img {
+        bottom: 30px;
+    }
+    .top-banner-button {
+        padding: 3px 5px;
+        width: 160px;
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 608px) {
+    .top-banner-heading,
+    .top-banner-price {
+        text-align: center;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+    }
+    .top-banner-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .top-banner-button,
+    .top-banner-price {
+        display: none;
+    }
+    .top-banner-image-container {
+        width: 80%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .weight-loss-container button,
+    .weight-loss-brand-container button,
+    #healthCare-advisors-container button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .top-banner-weight-loss {
+        left: 40%;
+        height: 40px;
+    }
+    .top-banner-weight-loss > img {
+        bottom: 21px;
+    }
 }
 
 /* BMI calculator */
@@ -189,14 +295,14 @@ button {
 }
 .bmi-calculator-container > .header > div:last-child {
     background: #fffaeb;
-    width: 319px;
-    height: 67px;
-    gap: 0px;
+    width: 194px;
+    gap: 0;
     border-radius: 0px 24px 0px 0px;
     opacity: 0px;
     position: absolute;
-    left: 200px;
+    left: 274px;
     z-index: -1;
+    height: 42%;
 }
 .bmi-calculator-container > .header {
     display: flex;
@@ -267,6 +373,7 @@ button {
 }
 
 /* facilities css */
+
 .facilities-container {
     display: flex;
     margin: 20px auto;
@@ -280,7 +387,7 @@ button {
     align-items: center;
     text-align: center;
     gap: 10px;
-    width: 15%;
+    min-width: 112px;
 }
 .facilities-container > .facilities-content > img {
     width: 30%;
@@ -292,8 +399,33 @@ button {
     font-size: 0.8rem;
     width: 80%;
 }
+.facilities-content {
+    width: 300px;
+}
+
+@media screen and (max-width: 1000px) {
+    .facilities-container {
+        width: 90%;
+    }
+    .facilities-container > .facilities-content {
+        min-width: 112px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .facilities-container {
+        width: 100%;
+        overflow: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .facilities-container::-webkit-scrollbar {
+        display: none; /* Hides scrollbar for WebKit browsers */
+    }
+}
 
 /* WeightLossProgram */
+
 .weight-loss-container {
     margin: 4% auto;
     width: 70%;
@@ -301,14 +433,15 @@ button {
     flex-direction: column;
     align-items: center;
 }
-.weight-loss-heading {
+.weight-loss-heading,
+.weight-loss-brand-heading {
     margin: auto;
     font-weight: 700;
     line-height: 40px;
     text-align: center;
     color: #0e3a5e;
-    width: 40%;
     font-size: 1.98rem;
+    margin-bottom: 20px;
 }
 .weight-loss-flex {
     display: flex;
@@ -348,6 +481,7 @@ button {
     color: rgba(14, 58, 94, 1);
     font-weight: 500;
     width: 30%;
+    font-size: 1rem;
     z-index: 1;
 }
 .weight-loss-row:nth-child(odd) {
@@ -375,123 +509,82 @@ button {
     margin-top: 30px;
 }
 .box {
-    width: 480px;
-    height: 80px;
+    min-width: 80px;
+    height: 100%;
+    top: -20px;
+    right: 5%;
     background: #ffffff;
     position: absolute;
-    top: 40%;
-    left: 40%;
     z-index: 0;
-    transform: rotate(90deg);
     box-shadow: 0px 5px 5px 0px rgba(224, 228, 238, 0.5);
     border-radius: 16px;
+    flex-shrink: 0;
 }
 .weight-loss-column {
     width: 100%;
 }
 
-/* Media Queries for Responsiveness */
-@media screen and (max-width: 1024px) {
-    .bmi-calculator-container {
-        width: 90%;
+@media screen and (max-width: 1200px) {
+    .brands-flex {
+        overflow: scroll;
+        -ms-overflow-style: none;
+        width: 100%;
     }
-
-    
-
-    .weight-loss-flex > .weight-loss-column:last-child > .weight-loss-header {
+    .brands-flex::-webkit-scrollbar {
         display: none;
     }
-    .box {
-        left: -4%;
-        top: 90%;
-        width: 960px;
+    .weight-loss-brand-heading {
+        font-size: 1.4rem;
     }
-    .weight-loss-flex > .weight-loss-column:last-child > .weight-loss-column-text > .box {
-        display: none;
-        z-index: 0;
+    .weight-loss-row-text {
+        width: 40%;
     }
- 
- 
-
     .weight-loss-container {
         width: 90%;
     }
-
-    .weight-loss-heading {
-        font-size: 1.6rem;
-        width: 80%;
-    }
-
-    .weight-loss-flex {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .weight-loss-button {
-        padding: 15px 50px;
-    }
 }
-
-@media screen and (max-width: 768px) {
-    .bmi-calculator-container {
-        width: 100%;
-        height: auto;
-    }
-
-   
-
-    .weight-loss-heading {
-        font-size: 1.4rem;
-        width: 90%;
-    }
-
-    .weight-loss-flex {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .weight-loss-button {
-        width: 100%;
-        padding: 15px 0;
-    }
-
-    .box {
-        width: 350px;
-        height: 60px;
-        top: 250px;
-        left: 50%;
-        transform: rotate(90deg) translateX(-50%);
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .bmi-calculator-container {
-        width: 100%;
-        padding: 10px;
-    }
- 
-    .weight-loss-heading {
-        font-size: 1.2rem;
-        width: 100%;
-    }
-
-    .weight-loss-flex {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .weight-loss-button {
-        width: 100%;
-        padding: 10px;
+@media screen and (max-width: 1000px) {
+    .weight-loss-row-text {
         font-size: 1rem;
     }
-
+}
+@media screen and (max-width: 900px) {
+    .weight-loss-flex > .weight-loss-column:last-child .weight-loss-header,
+    .weight-loss-flex > .weight-loss-column:last-child .box {
+        display: none;
+    }
+    .weight-loss-flex {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 0px;
+    }
+    .weight-loss-row {
+        padding: 0px;
+    }
     .box {
-        width: 300px;
-        height: 50px;
-        top: 230px;
-        left: 50%;
-        transform: rotate(90deg) translateX(-50%);
+        height: 208%;
+        z-index: 1;
+    }
+    .weight-loss-flex > .weight-loss-column:last-child .weight-loss-column-text {
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width: 563px) {
+    .weight-loss-brand-heading {
+        font-size: 1rem;
+        line-height: 30px;
+    }
+    .weight-loss-button {
+        padding: 20px 40px;
+    }
+    .weight-loss-heading {
+        font-size: 1.5rem;
+    }
+    .weight-loss-row-text {
+        font-size: 0.8rem;
+    }
+    .box {
+        min-width: 15%;
     }
 }
 
@@ -499,7 +592,20 @@ button {
 
 .global-result-container {
     margin: auto;
-    width: 60%;
+    width: 70%;
+    display: flex;
+    position: relative;
+}
+#line {
+    display: flex;
+    top: 29px;
+    height: 77%;
+    background: var(--Primary-yellow, #ffb900);
+    margin: 20px 0px;
+    position: absolute;
+    width: 2.289px;
+    flex-shrink: 0;
+    right: 764px;
 }
 .global-result-header {
     display: flex;
@@ -511,6 +617,7 @@ button {
 }
 .result-card {
     width: 40%;
+    height: 120px;
     padding: 20px;
     background: rgba(255, 250, 235, 1);
     border-radius: 16px;
@@ -519,11 +626,14 @@ button {
 .result-card-content {
     display: flex;
     gap: 20px;
-    justify-content: space-between;
 }
-.result-card-icon {
+.result-card-content > span > .result-card-icon {
     border: 3px solid rgba(14, 58, 94, 1);
     border-radius: 8px;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .result-value {
     color: rgba(255, 185, 0, 1);
@@ -534,7 +644,47 @@ button {
     color: rgba(121, 119, 100, 1);
     font-size: 1.2rem;
 }
-
+.result-card-content > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+@media screen and (max-width: 1200px) {
+    .global-result-container {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .global-result-container {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 859px) {
+    .global-result-container {
+        width: 100%;
+    }
+    .result-card {
+        width: 90%;
+    }
+    .result-card-content {
+        justify-content: flex-start;
+    }
+    .result-card-content > span > .result-card-icon {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: rgba(14, 58, 94, 1);
+    }
+}
+@media screen and (max-width: 395px) {
+    .result-value {
+        font-size: 1rem;
+    }
+    .result-description {
+        font-size: 0.8rem;
+    }
+}
 /* weight loss brand */
 .weight-loss-brand-container {
     margin: 30px auto;
@@ -576,7 +726,7 @@ button {
 #healthCare-advisors-container > h2 {
     color: rgba(14, 58, 94, 1);
     font-family: Poppins;
-    font-size: 40px;
+    font-size: 2rem;
     font-weight: 700;
     line-height: 50px;
     text-align: center;
@@ -680,6 +830,36 @@ button {
     justify-content: center;
 }
 
+@media screen and (max-width: 1040px) {
+    #healthCare-advisiors {
+        overflow: scroll;
+        -ms-overflow-style: none;
+        width: 100%;
+    }
+    #healthCare-advisiors::-webkit-scrollbar {
+        display: none;
+    }
+}
+@media screen and (max-width: 802px) {
+    #healthCare-advisors-container > h2 {
+        font-size: 1.5em;
+    }
+    #healthCare-advisors-container > h3 {
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 487px) {
+    #healthCare-advisors-container > h2 {
+        line-height: 30px;
+    }
+    #healthCare-advisors-container > h2 {
+        font-size: 1.3em;
+    }
+    #healthCare-advisors-container > h3 {
+        font-size: 1em;
+    }
+}
+
 /* valeo-program-testimonial */
 
 .valeo-program-testimonial {
@@ -693,16 +873,17 @@ button {
     text-align: center;
     color: rgba(14, 58, 94, 1);
     font-family: Poppins;
-    font-size: 40px;
+    font-size: 2rem;
     font-weight: 700;
     line-height: 50px;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 }
 
-video {
+.valeo-program-testimonial > video {
     border-radius: 16px;
     margin: 20px auto;
+    width: 100%;
 }
 #easyToSteps {
     display: flex;
@@ -710,9 +891,9 @@ video {
     gap: 10px;
 }
 .easy-to-step {
-    padding: 8px; /* Reduced padding for a more compact appearance */
-    width: 47%; /* Shrink the width */
-    min-height: 140px; /* Reduced min-height */
+    padding: 8px;
+    width: 47%;
+    min-height: 140px;
     display: flex;
     background: rgba(255, 250, 235, 1);
     border-radius: 16px;
@@ -740,7 +921,7 @@ video {
 .stepsDetails > h2 {
     color: rgba(14, 58, 94, 1);
     font-family: Poppins;
-    font-size: 24px;
+    font-size: 1.4em;
     font-weight: 600;
     line-height: 36px;
     text-align: left;
@@ -750,7 +931,7 @@ video {
 .stepsDetails > p {
     color: rgba(121, 119, 100, 1);
     font-family: Poppins;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
@@ -760,13 +941,12 @@ video {
 #easyToStepUI {
     display: flex;
     justify-content: space-around;
-    width: 100%;
 }
 #easyToStepUI > span {
     display: flex;
     flex-direction: column;
     font-family: Poppins;
-    font-size: 40px;
+    font-size: 2rem;
     font-weight: 700;
     line-height: 50px;
     text-underline-position: from-font;
@@ -783,6 +963,45 @@ video {
     color: rgba(14, 58, 94, 1);
 }
 
+@media screen and (max-width: 1200px) {
+    .stepsDetails > h2 {
+        font-size: 1em;
+    }
+    .stepsDetails > p {
+        font-size: 0.8em;
+        line-height: 1rem;
+    }
+    .easy-to-step > div:first-child > span {
+        font-size: 20px;
+        padding: 0%;
+        margin: 10px;
+    }
+
+    .valeo-program-testimonial {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 767px) {
+    .easy-to-step {
+        width: 100%;
+    }
+
+    button {
+        border: none;
+    }
+}
+@media screen and (max-width: 591px) {
+    #easyToStepUI > span {
+        font-size: 1.2rem;
+        line-height: 30px;
+    }
+    #easyToStepUI > img {
+        width: 50%;
+    }
+    .stepsDetails > h2 {
+        line-height: 20px;
+    }
+}
 /* SuccessStories */
 
 #successStories {
@@ -821,6 +1040,12 @@ video {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    width: 100%;
+}
+#imgPreviewContainer::-webkit-scrollbar {
+    display: none;
 }
 #details {
     position: absolute;
@@ -940,7 +1165,9 @@ video {
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 }
-
+#successStoriesReview {
+    margin: 0px 10px;
+}
 /* faq section */
 
 #faq {
@@ -949,7 +1176,7 @@ video {
 }
 #faq > h1 {
     font-family: Poppins;
-    font-size: 40px;
+    font-size: 2em;
     font-weight: 700;
     line-height: 60px;
     text-align: center;
@@ -985,4 +1212,43 @@ video {
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: rgba(50, 68, 91, 1);
+}
+#faqQuestion > details > ul > li {
+    color: rgba(50, 68, 91, 1);
+    font-size: 20px;
+}
+@media screen and (max-width: 844px) {
+    #faq {
+        width: 90%;
+    }
+    #faqQuestion > details > p {
+        font-size: 1.1em;
+    }
+    #faqQuestion > details > ul > li {
+        font-size: 1.1em;
+    }
+    #faqQuestion > details > summary > span {
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 527px) {
+    #faq > h1 {
+        font-size: 1.5em;
+    }
+    #faqQuestion > details > p {
+        font-size: 0.8em;
+    }
+    #faqQuestion > details > ul > li {
+        font-size: 0.8em;
+    }
+    #faqQuestion > details > summary > span {
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 387px) {
+    #faq > h1 {
+        font-size: 1.5em;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
 }

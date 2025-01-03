@@ -25,7 +25,7 @@ function TopBanner() {
             className="top-banner-image"
           />
           <div>
-            <b>Loose up to <span>25%</span></b><br />
+            <b>Loose up to <span>25%</span></b> 
             <span>body Weight*</span>
           </div>
         </div>

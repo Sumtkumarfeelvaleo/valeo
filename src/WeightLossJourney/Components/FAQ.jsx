@@ -31,7 +31,7 @@ function FAQ() {
           <details key={index} style={{ marginBottom: "20px" }}>
             <summary>
               <span>{faq.ques}</span>
-              <img src={collapseIcon} alt="" />
+              <span><img src={collapseIcon} alt="" /></span>
             </summary>
             {Array.isArray(faq.des) ? (
               <ul>

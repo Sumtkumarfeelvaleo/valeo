@@ -12,16 +12,16 @@ import TopBanner from "./WeightLossJourney/Components/TopBanner";
 function App() {
   return (
     <>
-      <TopBanner />
-      <Facilities />
-      <BMICalculator />
-      <WeightLossProgram />
+      {/* <TopBanner /> */}
+      {/* <Facilities /> */}
+      {/* <BMICalculator /> */}
+      {/* <WeightLossProgram /> */}
       <GlobalResult />
-      <WeightLossBrand />
+      {/* <WeightLossBrand />
       <HealthcareAdvicor />
       <ValeoProgramTestimonial />
       <SuccessStories />
-      <FAQ />
+      <FAQ /> */}
     </>
   );
 }

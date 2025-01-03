@@ -26,7 +26,7 @@ function SuccessStories() {
       <h2>Success Stories</h2>
       <div id="imgPreviewContainer">
         {data.map((item, index) => (
-          <div key={index}>
+          <div key={index} id="successStoriesReview">
             <div id="imgPreview">
               <div id="imgContainer">
                 <img src={item.beforeImg} alt="" />
